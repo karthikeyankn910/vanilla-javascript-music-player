@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/> 
+	</head>
+
+	<body>
+		<div class="music-player">
+			<div class="details">
+				<div class="album">
+					<img src="https://picsum.photos/200/300" />
+				</div>
+				<div class="name">
+					<marquee>
+						<h1>Song name here</h1>
+					</marquee>
+					<h3>Artist name</h3>
+				</div>
+			</div>
+			<div class="controllers">
+				<input type="range" class="slider" value="0" min="0" max="" />
+				<div class="buttons">
+					<button class="mute-button">
+						<i class="fas fa-volume-mute"></i>
+					</button>
+					<button class="prev-button">
+						<i class="fas fa-backward"></i>
+					</button>
+					<button class="play">
+						<i class="fas fa-play"></i>
+					</button>
+					<button class="next-button">
+						<i class="fas fa-forward"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<audio preload="metadata">
+			<source src="./songs/song1.mp3" type="audio/ogg" />
+		</audio>
+		<script src="./app2.js"></script>
+	</body> 
+</html>
